@@ -25,19 +25,27 @@
 
   - Giá trị của các node được tổ chức tăng dần từ trái qua phải.
 
-  - B-Tree index được dùng trong các biểu thức so sánh dạng: BETWEEN, LIKE, =, >, <, … → Tối ưu tốt cho câu lẹnh ORDER BY.
-
   - Khi truy vấn dữ liệu thì CSDL sẽ không scan dữ liệu trên toàn bộ bảng, việc tìm kiếm trong B-Tree là một quá trình đệ quy. Bắt đầu từ root node → branch → leaf, đến khi tìm được tất cả dữ liệu thỏa mãn với điều kiện thì sẽ dừng lại. 
+
+  - **Ưu điểm**: B-Tree index được dùng trong các biểu thức so sánh dạng: BETWEEN, LIKE, =, >, <, … → Tối ưu tốt cho câu lẹnh ORDER BY.
+  - **Nhược điểm**: Truy vấn với so sánh = sẽ có hiệu suất thấp hơn khi so sánh với hash index.
 
   2. **Hash index**
 
   ![](https://d3hi6wehcrq5by.cloudfront.net/itnavi-blog/hU4Tc.png)
 
-  https://viblo.asia/p/hash-index-trong-sql-63vKjwOVZ2R
+  - Hash index sử dụng kỹ thuật hashing, xây dựng 1 hash table để lưu trữ và tìm kiếm dữ liệu.
+  - Thông qua hash function, keys được mã hóa thành các hash value
+  - Với hash index, value sẽ chứa pointer tới row chứa record
+  - **Ưu điểm**: Hỗ trợ các truy vấn =, IN(), <=> rất nhanh chóng.
+  - **Nhược điểm**: 
+    - Không thể sorting data
+    - Không thể tìm kiếm theo wildcard
+    - Không thể hỗ trợ tìm kiếm theo range
 
 ## 3. Các loại index:
 
-- Clustered index:
+- **Clustered index**:
 
   ![](https://images.viblo.asia/f5a1a940-32f7-4856-b8ba-d5c28c071c26.jpeg)
 
@@ -47,7 +55,7 @@
     2. Tự defined ra 1 hidden **Primary key** và **Cluster data** trên cột này.
 
 
-- Non-clustered index:
+- **Non-clustered index**:
 
   ![](https://images.viblo.asia/9a6e80ee-c2fc-4942-8d9e-760b7edde7b1.png)
 

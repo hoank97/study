@@ -7,9 +7,7 @@
 7. ElectronJs
 8. Caching
 9. Message queue
-10. Nginx: revert proxy -> chia trafic,
-
-
+10. Nginx: revert proxy -> chia traffic,
 ----
 1. Multi thread in NodeJs
 2. Cluster in PM2

@@ -1,10 +1,10 @@
 # Stored Procedure
-## 1. What is a Stored Procedure
+## I. What is a Stored Procedure
 - A stored procedure is a prepare SQL  code that you can save, so the code can be reused over and over again
 - You can store SQL queries as a stored procedure, then call it to execute it
 - Stored procedure can also pass the parameters to it
 
-## 2. Key characteristics and advantages
+## II. Key characteristics and advantages
  1. **Precompilation**
  - Stored procedures are precompiled and stored in the database. This mean that the DBMS can optimize the execution plan for the stored procedure, leading to faster query execution. Ad-hoc queries, on the other hand, need to be parsed and compiled every time they are executed.
  2. **Reduced Network Traffic**
@@ -13,7 +13,7 @@
  - Stored procedures can provide a controlled interface to the database, allowing you to restrict direct access to tables and enforce security policies. This can enhance security and also potentially improve performance by preventing unauthorized or inefficient queries.
  4. **Transaction Management** 
  - Stored procedures can be used to manage transactions effectively, ensuring that a series of SQL operations are executed as a single, atomic transaction. This can help maintain data integrity and performance.
-## 3. Stored Procedure syntax
+## III. Stored Procedure syntax
 
 ```sql
 CREATE PROCEDURE procedure_name

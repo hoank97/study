@@ -1,8 +1,13 @@
 # Redis
 
+<div align="center">
+  <img src="https://topdev.vn/blog/wp-content/uploads/2019/05/Redis-1.png" />
+</div>
+
+
 **Redis**, which is an open source, in-memory data store. We can use it as a database, cache, streaming engine, and message broker.
 
-## Key features
+## I. Key features
 
 ### 1. In-memory data storage
 

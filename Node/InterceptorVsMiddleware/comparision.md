@@ -1,6 +1,8 @@
 # Difference between Interceptor with Middleware
 
-![](https://i.stack.imgur.com/2lFhd.jpg)
+<div align="center">
+  <img src="https://i.stack.imgur.com/2lFhd.jpg" />
+</div>
 
 In NestJs, Interceptor and Middleware are two important concepts used to handle HTTP requests before they reach their destination. However, they have difference purpose and usage patterns, such as:
 1. **`Middleware`**:

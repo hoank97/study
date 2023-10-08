@@ -6,7 +6,9 @@ Javascript has a runtime model based on a **event loop**, which is responsible f
 
 ### Visual representation
 
-![](https://topdev.vn/blog/wp-content/uploads/2018/12/event-loop-2.png)
+<div align="center">
+  <img src="https://topdev.vn/blog/wp-content/uploads/2018/12/event-loop-2.png" />
+</div>
 
 ### Stack
 

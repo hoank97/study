@@ -32,7 +32,9 @@
 
   2. **Hash index**
 
-  ![](https://d3hi6wehcrq5by.cloudfront.net/itnavi-blog/hU4Tc.png)
+<div align="center">
+  <img src="https://d3hi6wehcrq5by.cloudfront.net/itnavi-blog/hU4Tc.png" />
+</div>
 
   - Hash index sử dụng kỹ thuật hashing, xây dựng 1 hash table để lưu trữ và tìm kiếm dữ liệu.
   - Thông qua hash function, keys được mã hóa thành các hash value
@@ -47,7 +49,9 @@
 
 - **Clustered index**:
 
-  ![](https://images.viblo.asia/f5a1a940-32f7-4856-b8ba-d5c28c071c26.jpeg)
+<div align="center">
+  <img src="https://images.viblo.asia/f5a1a940-32f7-4856-b8ba-d5c28c071c26.jpeg" />
+</div>
 
   - Là một kiểu index trong đó địa chỉ của nó trong table trùng với địa chỉ `Search key` (thông thường, clustered index chính là PK). Với clustered index, toàn bộ dữ liệu của row sẽ được lưu ở các `Data reference` thay vì một pointer => Khi tìm kiếm dựa vào clustered index, dữ liệu trả về ngay trên B - tree chính là record cần tìm.
   - Nếu trong 1 table không có PK thì InnoDB sẽ tự lựa chọn theo thứ tự ưu tiên như sau:
@@ -57,7 +61,9 @@
 
 - **Non-clustered index**:
 
-  ![](https://images.viblo.asia/9a6e80ee-c2fc-4942-8d9e-760b7edde7b1.png)
+<div align="center">
+  <img src="https://images.viblo.asia/9a6e80ee-c2fc-4942-8d9e-760b7edde7b1.png" />
+</div>
 
   - `Search key`: giá trị của cột được đánh index
   - `Data reference`: trỏ đến vị trí của clustered index

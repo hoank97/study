@@ -11,10 +11,10 @@
 - A function used only to read data.
 - A function can be operated in the SELECT statement
 - Functions do not permit transaction management
-### 3. Types of functions
+## 3. Types of functions
 - `System functions`: Functions that are defined by the system are known as system functions. In other words, all the built-in functions supported by the server are referred to as System functions
 - `User defined functions`: Functions that are created by the user in the system database or a user-defined database are known as user-defined functions. The UDF functions accept parameters, perform actions, and returns the result
-### 4. Example
+## 4. Example
 This example will create a function to calculate the net sales based on the quantity, price, and discount value:
 ```sql
 CREATE FUNCTION udfNet_Sales(  
@@ -29,10 +29,12 @@ BEGIN
 END;   
 ```
 
-execute the function:
+Execute the function:
 ```sql
 SELECT dbo.udfNet_Sales(25, 500, 0.2) AS net_sales;  
 ```
-result:
+Result:
 
-![Alt text](https://static.javatpoint.com/sqlserver/images/sql-server-functions3.png)
+<div align="center">
+  <img src="https://static.javatpoint.com/sqlserver/images/sql-server-functions3.png" />
+</div>
